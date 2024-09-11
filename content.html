@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القصص والصور</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">حكاياتنا</div>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="content.html">القصص والصور</a></li>
+            <li><a href="create.html">إنشاء حساب</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <h2>انشر قصتك أو صورتك</h2>
+        <form id="publish-form">
+            <label for="title">عنوان:</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="story">نص القصة:</label>
+            <textarea id="story" name="story" rows="5" required></textarea>
+
+            <label for="image">تحميل صورة (اختياري):</label>
+            <input type="file" id="image" name="image">
+            
+            <button type="submit">نشر</button>
+        </form>
+
+        <h2>القصص المنشورة</h2>
+        <div id="stories-section">
+            <!-- ستتم إضافة القصص هنا عبر JavaScript -->
+        </div>
+
+        <h2>الصور المنشورة</h2>
+        <div id="images-section">
+            <!-- ستتم إضافة الصور هنا عبر JavaScript -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 حكاياتنا. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
